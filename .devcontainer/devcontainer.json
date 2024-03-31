@@ -1,0 +1,22 @@
+{
+	"name": "elixir-codespaces-example",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "elixir-codespaces-example",
+	"workspaceFolder": "/home/vscode/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"ms-vscode-remote.vscode-remote-extensionpack",
+                "JakeBecker.elixir-ls"
+			]
+		},
+		"codespaces": {}
+	},
+	"features": {},
+	"forwardPorts": [],
+	"remoteUser": "vscode",
+	"shutdownAction": "stopCompose"
+}
