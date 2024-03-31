@@ -4,7 +4,7 @@ import Config
 config :elixir_codespaces_example, ElixirCodespacesExample.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "localhost",
+  hostname: "postgres",
   database: "elixir_codespaces_example_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
