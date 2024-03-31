@@ -10,7 +10,8 @@ defmodule ElixirCodespacesExample.Application do
     children = [
       ElixirCodespacesExampleWeb.Telemetry,
       ElixirCodespacesExample.Repo,
-      {DNSCluster, query: Application.get_env(:elixir_codespaces_example, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:elixir_codespaces_example, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: ElixirCodespacesExample.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: ElixirCodespacesExample.Finch},
